@@ -1,4 +1,5 @@
-function caesarCipher(str, shift) {
+function caesarCipher(str, shift = 3) {
+	if (typeof str !== "string") return str;
 	return str
 		.split("")
 		.map((c) => {
